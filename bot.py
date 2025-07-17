@@ -96,7 +96,9 @@ async def start():
 
 if __name__ == '__main__':
     try:
-        loop.run_until_complete(start())
+       loop.run_until_complete(start())
+        loop.run_forever()
+
     except KeyboardInterrupt:
         logging.info('Service Stopped Bye 👋')
 
